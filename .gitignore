@@ -1,0 +1,34 @@
+# ---- Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+venv/
+
+code/.env
+
+*.jasm
+*.jaco
+*.jac.db
+
+*.log
+
+# ---- Specific files to ignore ----
+code/gemini.py
+code/guess_game.py
+code/hello.jac
+code/guess_game.jac
+code/guess_game1.jac
+code/guess_game3.jac
+code/guess_game4.jac
+code/first.jac
+
+# ---- VS Code settings ----
+.vscode/
+*.code-workspace
+
+# ---- OS specific ----
+.DS_Store
+Thumbs.db
