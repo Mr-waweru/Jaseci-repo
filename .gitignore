@@ -24,6 +24,7 @@ code/guess_game1.jac
 code/guess_game3.jac
 code/guess_game4.jac
 code/first.jac
+code/mental_health_buddy.jac
 
 # ---- VS Code settings ----
 .vscode/
@@ -32,3 +33,6 @@ code/first.jac
 # ---- OS specific ----
 .DS_Store
 Thumbs.db
+
+*Pipfile
+*Pipfile.lock
