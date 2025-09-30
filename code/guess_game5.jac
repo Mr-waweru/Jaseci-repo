@@ -3,35 +3,38 @@
 import random;
 
 walker GuessGame {
-    has attempts: int = 10;
+    has guess: int = 5;
 
     can start with entry {
         print("Welcome to the Number Guessing Game!");
 
-        # Create a turn node attached to root
-        root ++> turn();
-
-        # Visit the newly created turn node
-        visit [--> turn];
+        # Make a new turn node (the place where the secret number is stored)
+        next = root ++> turn();
+        # Move (visit) into the node so the guessing can begin
+        visit next;
     }
 
     can process_guess with turn entry {
-        while self.attempts > 0 {
+        while self.guess > 0 {
             let user_guess = int(input(f"Guess a number between 1 and 10: "));
 
+            if user_guess < 1 or user_guess > 10 {
+                print("Please enter a number between 1 and 10!");
+            }
+
             if user_guess == here.correct_number {
-                print("Congratulations! You guessed correctly.");
+                print("Congratulations! You guessed correctly!");
                 return;
             } elif user_guess > here.correct_number {
-                self.attempts -= 1;
-                print(f"Too high! You have {self.attempts} attempts left.");
+                self.guess -= 1;
+                print(f"Too high! You have {self.guess} guesses left!");
             } else {
-                self.attempts -= 1;
-                print(f"Too low! You have {self.attempts} attempts left.");
+                self.guess -= 1;
+                print(f"Too low! You have {self.guess} guesses left!");
             }
         }
 
-        print(f"Out of attempts! The correct number was {here.correct_number}.");
+        print(f"Out of attempts! The correct number was {here.correct_number}!");
     }
 }
 
