@@ -26,4 +26,4 @@ Gen.AI/
     - Completed assignment of guess_game6 [code/guess_game6.jac](code/guess_game6.jac)
     - My project [code/mental_health_buddy1.jac](code/mental_health_buddy1.jac).
 
-* See `code/README.md` for run instructions, usage, and expected output screenshots.
+* See [code/README.md](code/README.md) for run instructions, usage, and expected output screenshots.
