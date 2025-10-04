@@ -7,23 +7,33 @@ The seminar focuses on building practical applications using Jac and popular LLM
 
 ```
 Gen.AI/
-├── .vscode/                # VS Code workspace settings
-├── code/                   # All source code (Jac + Python)
-│   ├── guess_game5.jac     # Fixed guessing game5
-│   ├── guess_game6.jac     # Fixed guessing game6 AI-enhanced guessing game (byLLM)
-│   ├── mental_health_buddy.jac  # My project Jac mental health buddy (LLM)
-│   ├── requirements.txt    # Requirements dependencies
-│   ├── .env                # (NOT tracked) API keys and secrets
-│   └── README.md           # Detailed instructions & usage for code
-├── .gitignore
-└── README.md               # course description + links
+├── code/                               # All source code
+│   ├── guess_game5.jac                 # Guessing game5
+│   ├── guess_game5.impl.jac            # Fixed guessing game5 impl.jac file
+│   ├── guess_game6.jac                 # Guessing game6 AI-enhanced guessing game (byLLM)
+│   ├── guess_game6.impl.jac            # Fixed guessing game6 AI-enhanced guessing game (byLLM)
+│   ├── mental_health_buddy.jac         # My project Jac mental health buddy interface
+│   ├── mental_health_buddy.impl.jac    # My project Jac mental health buddy implementation
+│   ├── requirements.txt                # Requirements dependencies
+│   ├── .env                            # (NOT tracked) API keys and secrets
+│   └── README.md                       # Detailed instructions & usage for code
+├── MCP-Chatbot/
+│   ├── client.jac                      #
+│   ├── mcp_client.jac                  #
+│   ├── mcp_server.jac                  #
+│   ├── server.jac                      #
+│   ├── server.impl.jac                 #
+│   ├── tools.jac                       #
+├── .gitignore      
+├── Makefile                            # Automate Google Credentials (Gemini API Key) on the terminal used in the MCP Chatbot    
+└── README.md                           # course description + links 	
 ```
 
 ## Important links
 
-* Assignments and examples live in the `code/` folder: 
-    - Completed assignment of guess_game5 [code/guess_game5.jac](code/guess_game5.jac)
-    - Completed assignment of guess_game6 [code/guess_game6.jac](code/guess_game6.jac)
-    - My project [code/mental_health_buddy1.jac](code/mental_health_buddy1.jac).
+* Assignment 1 and examples and my project live in the `code/` folder: 
+    - Completed assignment of guess_game5 [code/guess_game5.impl.jac](code/guess_game5.impl.jac)
+    - Completed assignment of guess_game6 [code/guess_game6.impl.jac](code/guess_game6.impl.jac)
+    - My project [code/mental_health_buddy.jac](code/mental_health_buddy.jac) and [code/mental_health_buddy.impl.jac](code/mental_health_buddy.impl.jac)
 
-* See [code/README.md](code/README.md) for run instructions, usage, and expected output screenshots.
+    -  See [code/README.md](code/README.md) for run instructions, usage, and expected output screenshots.
