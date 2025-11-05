@@ -21,7 +21,7 @@ Prerequisites (WSL / Ubuntu recommended):
    sudo apt install python3 python3-venv python3-pip
    python3 -m venv venv
    source venv/bin/activate
-   pip install -r requirements.txt  # or: pip install byllm python-dotenv
+   pip install -r requirements.txt
    ```
 2. Create a `.env` in this directory with keys (example):
 

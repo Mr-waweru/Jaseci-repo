@@ -19,6 +19,7 @@ code/.env
 code/gemini.py
 code/guess_game.py
 code/hello.jac
+code/buddy.py
 code/guess_game.jac
 code/guess_game1.jac
 code/guess_game3.jac
