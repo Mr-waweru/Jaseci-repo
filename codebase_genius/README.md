@@ -108,7 +108,7 @@ graph TB
 ### **Tutorial Export & Download**
 - **Markdown Export**: Download complete tutorials as `.md` files to your local computer
 - **Streamlit Integration**: Seamless download functionality through the web interface
-- **Portable Format**: Generated tutorials can be viewed, edited, and shared offline
+- **Portable Format**: Generated documentation can be viewed, edited, and shared offline
 - **One-Click Download**: Simple "Download Tutorial" button for instant file access
 
 ---
@@ -133,22 +133,6 @@ graph TB
 </div>
 
 > Also you can download the complete tutorial as the Markdown file by clicking "Download Tutorial"
-
-## Development Tutorial & Demonstration
-
-### **Live Action**
-
-<div align="center">
-  <a href="Coming soon" target="_blank">
-    <img src="https://img.youtube.com/vi/HP4tnDDxezI/maxresdefault.jpg" width="600" alt="Codebase Genius Demo Video" style="cursor: pointer; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  </a>
-  <p><em>🎥 Click here to see live action</em></p>
-</div>
-
----
-
-## Generated Outputs Showcase
-
 
 ---
 
@@ -204,20 +188,26 @@ graph TB
 5. **Access the application**:
    - Open your browser to `http://localhost:8501`
    - Enter a GitHub repository URL
-   - Specify a local directory path
-   - Click "Generate Tutorial" 
+   - Click "Generate Documentation" 
 
 ---
 
 ## Project Structure
 
 ```
-Codebase_genius/
-   ├── BE               # 
-        ├── main.jac
-   ├── main.impl.jac           # 
-   ├── utils.jac               # 
-   └── app.py                  # 
+codebase_genius/
+├── README.md             
+├── .env
+├── .gitignore
+├── requirements.txt
+├── BE/
+│   ├── README.md
+│   ├── utils.jac
+│   ├── main.jac
+│   └── main.impl.jac
+└── FE/
+    ├── README.md
+    └── app.py
 
 ```
 
