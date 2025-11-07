@@ -1,41 +1,21 @@
-# ---- Python ----
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.pkl
-
-venv/
-
-code/.env
-
 *.jasm
 *.jaco
 *.jac.db
 
-*.log
-
 # ---- Specific files to ignore ----
-code/gemini.py
-code/guess_game.py
-code/hello.jac
-code/buddy.py
-code/guess_game.jac
-code/guess_game1.jac
-code/guess_game3.jac
-code/guess_game3.impl.jac
-code/guess_game4.jac
-code/guess_game4.impl.jac
-code/first.jac
-code/mental_health_buddy01.jac
+gemini.py
+guess_game.py
+hello.jac
+buddy.py
+guess_game.jac
+guess_game1.jac
+guess_game3.jac
+guess_game3.impl.jac
+guess_game4.jac
+guess_game4.impl.jac
+first.jac
+mental_health_buddy01.jac
 
 # ---- VS Code settings ----
 .vscode/
 *.code-workspace
-
-# ---- OS specific ----
-.DS_Store
-Thumbs.db
-
-*Pipfile
-*Pipfile.lock
