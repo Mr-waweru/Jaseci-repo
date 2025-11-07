@@ -1,0 +1,47 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyc
+*.pyo
+*.pyd
+*.pkl
+
+# --- Virtual Environments ---
+venv/
+.venv/
+*/venv/
+*/.venv/
+**/venv/
+**/.venv/
+
+# --- Environment / Secret Files ---
+.env
+*/.env
+**/.env
+
+
+# --- Databases ---
+*.sqlite3
+*.db
+
+# --- Dependency Management ---
+Pipfile
+Pipfile.lock
+
+# --- Chroma (vector DB / cache directories) ---
+chroma/
+*/chroma/
+**/chroma/
+
+# --- Logs & Temporary Files ---
+*.log
+*.tmp
+*.bak
+
+# --- System / OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Git Metadata ---
+.git/
