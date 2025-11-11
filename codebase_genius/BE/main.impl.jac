@@ -1,7 +1,7 @@
 # --------------------------------------------------------
 # Purpose: Implements the Supervisor walker and supporting node logic
 # for the Codebase Genius backend. This handles cloning, analysis, and
-# tutorial/documentation generation from a GitHub repository.
+# documentation generation from a GitHub repository.
 # --------------------------------------------------------
 # Node Responsibilities:
 #  - RepoMapper: Clones the repo and summarizes its contents.
@@ -16,46 +16,51 @@ import from os { path }
 import json;
 import os;
 
-# get token from environment (server-side)
-token = os.getenv("GITHUB_TOKEN", "");
-if token and repo_url.startswith("https://") {
-    auth_repo_url = repo_url.replace("https://", f"https://{token}@");
-} else {
-    auth_repo_url = repo_url;
-}
-Repo.clone_from(auth_repo_url, repo_dir);
-
 # --- RepoMapper Node Implementation ---
-# Reads repository chunks and clones repositories
-impl RepoMapper.repo_clone(repo_url: str, repo_dir: str, git_token: str="") {
-    print("Step 1: Cloning repository...");
-    if git_token and repo_url.startswith("https://") {
-        auth_url = repo_url.replace("https://", f"https://{git_token}@");
-    } else {
-        auth_url = repo_url;
+impl RepoMapper.repo_clone(repo_url: str) {
+    print("Step 1: Cloning repository (impl)...");
+    try {
+        # prefer existing self.repo_path (set by Supervisor.start), else build default
+        to_path = getattr(self, "repo_path", "");
+        if (not to_path or to_path == "") {
+            repo_name = os.path.basename(repo_url).replace(".git", "");
+            to_path = f"./outputs/{repo_name}";
+            # persist for later stages
+            setattr(self, "repo_path", to_path);
+        }
+
+        # ensure directory exists
+        Path(to_path).mkdir(parents=True, exist_ok=True);
+        print(f"DEBUG: cloning {repo_url} -> {to_path}");
+
+        # GitPython requires destination path argument
+        Repo.clone_from(repo_url, to_path);
+
+        print("Repository cloned successfully!");
     }
-    Repo.clone_from(auth_url, repo_dir);
-    print("Repository cloned successfully!");
+    except Exception as e {
+        print("Error cloning repository: " + str(e));
+        raise e;
+    }
 }
 
 impl RepoMapper.read_in_chunks(file_path: any, chunk_size: any = 150) {
-    with open(file_path, 'r', encoding='utf-8') as f  { 
-        chunk = []; 
-        for (line_num, line) in enumerate(f, 1) { 
-            chunk.append(line); 
+    with open(file_path, 'r', encoding='utf-8') as f  {
+        chunk = [];
+        for (line_num, line) in enumerate(f, 1) {
+            chunk.append(line);
             if ((line_num % chunk_size) == 0) {
-                yield ''.join(chunk) ;
+                yield ''.join(chunk);
                 chunk = [];
             }
         }
         if chunk {
-            yield ''.join(chunk) ;
+            yield ''.join(chunk);
         }
     }
 }
 
 # --- CodeAnalyzer Node Implementation ---
-# Reads files, tracks progress, and returns a dictionary of code content
 impl CodeAnalyzer.read_files_from_list(file_paths: list[ str ]) -> dict {
     files_dict = {};
     total_files = len(file_paths);
@@ -81,15 +86,16 @@ impl CodeAnalyzer.read_files_from_list(file_paths: list[ str ]) -> dict {
     return files_dict;
 }
 
-# --- Supervisor Walker Implementation ---
-# Coordinates the entire flow: clone → summarize → analyze → document
+# --- Supervisor Walker Implementation (impl) ---
 impl Supervisor.start {
-    print("Starting Supervisor workflow...");
+    print("🚀 Starting Supervisor workflow (impl.start)...");
+    print(f"DEBUG: self.repo_url = {self.repo_url}");
+
 
     ExDocGenie_nodes = [root --> (`?DocGenie: saved_repo_url==self.repo_url)];
     if ExDocGenie_nodes {
         report{"overview":ExDocGenie_nodes[0].overview};
-        report{"tutorial":ExDocGenie_nodes[0].chapters};
+        report{"documentation":ExDocGenie_nodes[0].chapters};
         disengage;
     } else {
         here ++> RepoMapper();
@@ -99,10 +105,11 @@ impl Supervisor.start {
         # --- Clone Repo Automatically ---
         import from pathlib { Path }
         repo_name = os.path.basename(self.repo_url).replace(".git", "");
-        self.repo_path = f"./repos/{repo_name}";
+        self.repo_path = f"./outputs/{repo_name}";
         Path(self.repo_path).mkdir(parents=True, exist_ok=True);
 
-        Repo.repo_clone(self.repo_url, self.repo_path);
+        # call repo_clone with single arg (impl uses self.repo_path internally)
+        Repo.repo_clone(self.repo_url);
 
         # --- Summarize README ---
         file_directory = Path(self.repo_path + "/README.md");
@@ -119,7 +126,8 @@ impl Supervisor.start {
 
         # --- Filter Meaningful Files ---
         print("Step 3: Filtering important project files...");
-        Repo.folder_structure = get_filtered_folder_structure(Path(self.repo_path), Repo.summary);
+        # PASS A STRING path (not pathlib.Path) to LLM tool schema-friendly signature
+        Repo.folder_structure = get_filtered_folder_structure(self.repo_path, Repo.summary);
 
         # --- Code Analysis Phase ---
         here ++> CodeAnalyzer();
@@ -144,7 +152,7 @@ impl Supervisor.start {
         DocGenie_nodes = [root --> DocGenie];
         Doc = DocGenie_nodes[-1];
         Doc.saved_repo_url = self.repo_url;
-        
+
         print("Step 7: Drafting chapters...");
         Doc.drafted_chapters = chapter_drafting(Code.abstractions, Code.code_base);
 
@@ -152,30 +160,34 @@ impl Supervisor.start {
         Doc.overview = generate_overview(Code.abstractions, Code.relationships);
         report{"overview":Doc.overview};
 
-        print("Step 9: Generating tutorial...");
+        print("Step 9: Generating docs...");
         Doc.chapters = generate_documentation(Doc.drafted_chapters);
-        report{"tutorial":Doc.chapters};
+        report{"documentation":Doc.chapters};
 
         # --- Save Documentation Locally ---
-        print("Step 10: Saving documentation locally...");
+        print("Step 10: Saving docs locally...");
         output_dir = Path(f"./outputs/{repo_name}");
         if not output_dir.exists() {
             output_dir.mkdir(parents=True, exist_ok=True);
         }
         docs_path = output_dir / "docs.md";
 
-        md_output = f"# Overview\n\n{Doc.overview}\n\n## Chapters\n\n";
+        md_output = "# Overview\n\n" + (Doc.overview if Doc.overview else "") + "\n\n## Chapters\n\n";
         for (i, chapter) in enumerate(Doc.chapters, 1) {
-            md_output += f"### Chapter {i}: {chapter.title}\n\n{chapter.content}\n\n";
+            # chapter.title and chapter.content expected to exist on chapter objects
+            chapter_title = chapter.title if getattr(chapter, "title", None) else (chapter.get("title") if hasattr(chapter, "get") else "Chapter");
+            chapter_content = chapter.content if getattr(chapter, "content", None) else (chapter.get("content") if hasattr(chapter, "get") else "");
+            md_output = md_output + "### Chapter " + str(i) + ": " + chapter_title + "\n\n" + chapter_content + "\n\n";
         }
 
         with open(docs_path, "w", encoding="utf-8") as f {
-            f.write(md_output)
+            f.write(md_output);
         }
         print(f"Documentation saved locally at: {docs_path}");
-        
     }
 }
+
+
 
 # --------------------------------------------------------
 # LOGIC FLOW SUMMARY
@@ -184,6 +196,6 @@ impl Supervisor.start {
 # 3. Creates CodeAnalyzer node → reads all files and extracts abstractions.
 # 4. Builds relationships and determines chapter order.
 # 5. Creates DocGenie node → drafts chapters and overview.
-# 6. Generates Markdown and saves docs under ./outputs/<repo_name>/docs.md.
-# 7. Reports overview and tutorial back to frontend for display.
+# 6. Generates documentation Markdown and saves docs under ./outputs/<repo_name>/docs.md.
+# 7. Reports overview and documentation back to frontend for display.
 # --------------------------------------------------------
