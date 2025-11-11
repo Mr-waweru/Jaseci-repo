@@ -1,22 +1,6 @@
 # Codebase Genius
 
-An AI-powered tool that transforms any GitHub repository into comprehensive, beginner-friendly tutorials automatically. Turn complex codebases into educational masterpieces with the power of AI!
-
-## Overview
-
-**Codebase Genius** revolutionizes how developers understand and learn from unfamiliar codebases. Instead of spending hours digging through code, documentation, and trying to understand project architecture, our AI-powered system does the heavy lifting for you.
-
-### The Idea
-
-Imagine being able to:
-- **Clone any GitHub repository** and instantly get a complete tutorial
-- **Understand complex projects** in minutes, not hours
-- **Learn from real-world codebases** with AI-generated explanations
-- **Get beginner-friendly documentation** for any programming language or framework
-
-### Scope
-
-Codebase Genius works with **any type of repository** - whether it's Python, JavaScript, Java, C++, Flutter, or even specialized languages like Jac. Our AI understands the patterns, extracts the core concepts, and creates structured learning materials that make sense to developers at any level.
+Codebase Genius is an autonomous, multi-agent system that converts a public GitHub repository into high-quality, human-readable Markdown documentation — complete with prose explanations and architecture diagrams. The implementation is optimized for Python and Jac codebases but is designed to be generalisable to other languages.
 
 ---
 
@@ -72,15 +56,6 @@ graph TB
 
 ---
 
-## High-Level Workflow
-
-<div align="center">
-  <img src="./assets/workflow.jpeg" alt="Codebase Genius High-Level Workflow" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-  <p><em>Complete workflow showing how Codebase Genius transforms repositories into tutorials</em></p>
-</div>
-
----
-
 ## Core Functionalities
 
 ### **Intelligent Repository Analysis**
@@ -132,7 +107,7 @@ graph TB
   <p><em>Clean and intuitive web interface for generating AI-powered tutorials</em></p>
 </div>
 
-> Also you can download the complete tutorial as the Markdown file by clicking "Download Tutorial"
+> Also you can download the complete tutorial as the Markdown file by clicking "Download Documentation"
 
 ---
 
