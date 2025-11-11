@@ -3,12 +3,19 @@ import from byllm.llm { Model }
 import from pathlib { Path }
 import os;
 
-glob llm = Model(model_name="gemini/gemini-2.0-flash", verbose=False);
+glob llm = Model(model_name="gemini/gemini-2.5-flash", verbose=False);
 
-"""obtain this chunk of text and summary of get so far and give the response as the new summary of the chunk of text combined with the given summary so far, maximum 150 lines."""
+"""obtain this chunk of text and summary so far and return the updated summary.
+This tool is intended to be used by the Supervisor to iteratively summarize
+large README files in chunks.
+"""
 def get_summary(text_chunk: str, summary: str) -> str by llm();
 
-"""Return all file paths under repo_path (repo_path passed as a string)."""
+
+"""Return all file paths under repo_path (repo_path passed as a string).
+This helper is used as a supporting tool for the LLM-based file filtering
+function which expects a simple JSON-serializable signature.
+"""
 def get_all_file_paths(repo_path: str) -> list[str] {
     all_files = [];
     try {
@@ -26,8 +33,12 @@ def get_all_file_paths(repo_path: str) -> list[str] {
     return all_files;
 }
 
-"""Given a cloned GitHub repository path (string) and a project summary, 
-identify and filter out non-essential files. Return only meaningful source code files."""
+
+"""Given a cloned GitHub repository path (string) and a project summary,
+identify and filter out non-essential files. Return only meaningful source code files.
+This is a high-level LLM tool that uses `get_all_file_paths` as a tool to get
+candidate files, and then the LLM should return a filtered list of file paths.
+"""
 def get_filtered_folder_structure(repo_path: str, summary: str ) -> list[str] by llm(method="ReAct", tools=[get_all_file_paths]);
 
 obj Absts {
@@ -36,7 +47,11 @@ obj Absts {
     has related_files: list[str] = [];
 }
 
-"""Obtain all_codes and identify new abstractions at least 5 or 6."""
+
+"""Obtain all_codes and identify new abstractions (aim for 5-8 items).
+The returned list is a list of `Absts` objects describing key concepts/abstractions
+in the codebase and which files are related.
+"""
 def extract_abstractions(all_codes: dict) -> list[Absts] by llm(method='Reason');
 
 obj Rels {
@@ -45,10 +60,12 @@ obj Rels {
     has label: str;
 }
 
+
 """Identify key relationships between the abstractions."""
 def get_relationships(abstractions: list[Absts]) -> list[Rels] by llm(method='Reason');
 
-"""Determine best order to explain this project in a tutorial."""
+
+"""Determine best order to explain this project in a docs."""
 def chapter_ordering(summary: str, all_abstractions: list[Absts], all_relationships: list[Rels]) -> list[int] by llm(method="Reason");
 
 obj Cformat {
@@ -61,6 +78,7 @@ obj Cformat {
 
 sem Cformat = "Structured format for drafted chapters.";
 
+
 """Generate drafted chapters as a list of Cformat objects."""
 def chapter_drafting(abstractions_list: list[Absts], all_code_snippets: dict) -> list[Cformat] by llm();
 
@@ -72,7 +90,21 @@ obj Chapter {
     has content: str;
 }
 
-sem Chapter = "Complete chapter for the tutorial.";
+sem Chapter = "Complete chapter for the documentation.";
 
 """Generate beginner-friendly Markdown chapters including mermaid diagrams."""
 def generate_documentation(all_drafted_chapters: list[Cformat]) -> list[Chapter] by llm();
+
+
+# -------------------------
+# LOGIC FLOW SUMMARY
+# 1. LLM instance byllm created for use by tool functions.
+# 2. get_all_file_paths enumerates repo files (helper used by LLM tool schema).
+# 3. LLM tools:
+#    - get_summary: iterative README summarization
+#    - get_filtered_folder_structure: filter meaningful files using get_all_file_paths
+#    - extract_abstractions, get_relationships, chapter_ordering, chapter_drafting,
+#      generate_overview, generate_documentation: high-level LLM-driven steps
+# 4. The Supervisor orchestrates calling these tools; helper functions keep signatures
+#    LLM-schema friendly (primitive types like string lists).
+# -------------------------
