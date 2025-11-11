@@ -2,19 +2,17 @@
 # Purpose: Supervisor Interface
 # --------------------------------------------------------
 
+import from utils { get_summary, get_filtered_folder_structure, extract_abstractions, get_relationships, chapter_ordering, chapter_drafting, generate_documentation, generate_overview }
 import from git { Repo }
-import from pathlib { Path }
 import from dotenv { load_dotenv }
-import from byllm.llm { Model }
 import os;
-import from utils { get_summary,get_filtered_folder_structure,extract_abstractions,get_relationships,chapter_ordering,chapter_drafting,generate_documentation, generate_overview }
 
 node RepoMapper {
-    has folder_structure: list[str]=[];
-    has summary: str= "";
-
-    def read_in_chunks(file_path: any, chunk_size: any = 150);
-    def repo_clone(repo_url: str, repo_dir: str);
+    has folder_structure: list[str] = [];
+    has summary: str = "";
+    has repo_path: str = "";
+    def read_in_chunks(file_path: str, chunk_size: int);
+    def repo_clone(repo_url: str);
 }
 
 node CodeAnalyzer {
@@ -22,24 +20,24 @@ node CodeAnalyzer {
     has abstractions: list = [];
     has relationships: list = [];
     has chapter_order: list = [];
-
-    def read_files_from_list(file_paths: list[ str ]) -> dict();
+    def read_files_from_list(file_paths: list[str]) -> dict();
 }
 
 node DocGenie {
-    has saved_repo_url: str= "";
+    has saved_repo_url: str = "";
     has drafted_chapters: list = [];
     has overview: str = "";
     has chapters: list = [];
-    has diagrams: list = [];
 }
 
 walker Supervisor {
-    has repo_url: str= "";
-    has repo_path: str= "";
+    has repo_url: str = "";
+    obj __specs__ { static has auth: bool = False; }
 
-    obj __specs__{
-        static has auth: bool = False;
+    can start with `root entry {
+        report {
+            "status": "Supervisor initialized",
+            "repo_url": self.repo_url
+        };
     }
-    can start with `root entry;
 }
