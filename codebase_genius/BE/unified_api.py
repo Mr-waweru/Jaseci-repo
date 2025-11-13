@@ -1,7 +1,5 @@
 """
 Unified API combining Jac backend and CCG query endpoints.
-Run this instead of separate services on port 8000.
-
 Endpoints:
 - POST /walker/Supervisor - Main documentation generation (Jac)
 - GET /ccg/graph?repo_name=... - Get full CCG graph
@@ -39,7 +37,6 @@ app.add_middleware(
 
 
 # ============= JAC BACKEND ENDPOINTS =============
-# These should be mounted by jac_cloud when you run `jac serve`
 # This file just adds the CCG endpoints to the same server
 
 
@@ -284,12 +281,7 @@ To run this unified API with your Jac backend:
 2. Run: jac serve main.jac --host 0.0.0.0 --port 8000
 
 The Jac serve command will automatically mount additional FastAPI routes
-from this module if properly configured.
-
-Alternatively, run standalone:
-    python unified_api.py
-
-And ensure your Jac backend is running separately.
+from this module.
 """
 
 if __name__ == "__main__":
