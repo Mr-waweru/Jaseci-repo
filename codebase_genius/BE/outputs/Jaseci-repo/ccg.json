@@ -1,0 +1,1858 @@
+{
+  "nodes": [
+    {
+      "id": "code/mental_health_buddy.jac:cheer_up",
+      "type": "function",
+      "name": "cheer_up",
+      "module": "code/mental_health_buddy.jac"
+    },
+    {
+      "id": "code/guess_game6.jac:give_hint",
+      "type": "function",
+      "name": "give_hint",
+      "module": "code/guess_game6.jac"
+    },
+    {
+      "id": "code/guess_game5.py:GuessGame",
+      "type": "class",
+      "name": "GuessGame",
+      "module": "code/guess_game5.py"
+    },
+    {
+      "id": "code/guess_game5.py:GuessGame.__init__",
+      "type": "function",
+      "name": "__init__",
+      "module": "code/guess_game5.py",
+      "lineno": 4
+    },
+    {
+      "id": "code/guess_game5.py:GuessGame.start",
+      "type": "function",
+      "name": "start",
+      "module": "code/guess_game5.py",
+      "lineno": 8
+    },
+    {
+      "id": "codebase_genius/README.md:calling",
+      "type": "function",
+      "name": "calling",
+      "module": "codebase_genius/README.md"
+    },
+    {
+      "id": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "type": "function",
+      "name": "list_mcp_tools",
+      "module": "code/MCP-Chatbot/mcp_client.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/mcp_client.jac:_list",
+      "type": "function",
+      "name": "_list",
+      "module": "code/MCP-Chatbot/mcp_client.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/mcp_client.jac:call_mcp_tool",
+      "type": "function",
+      "name": "call_mcp_tool",
+      "module": "code/MCP-Chatbot/mcp_client.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/mcp_client.jac:_call",
+      "type": "function",
+      "name": "_call",
+      "module": "code/MCP-Chatbot/mcp_client.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/mcp_server.jac:resolve_hints",
+      "type": "function",
+      "name": "resolve_hints",
+      "module": "code/MCP-Chatbot/mcp_server.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/mcp_server.jac:tool_search_docs",
+      "type": "function",
+      "name": "tool_search_docs",
+      "module": "code/MCP-Chatbot/mcp_server.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/mcp_server.jac:tool_search_web",
+      "type": "function",
+      "name": "tool_search_web",
+      "module": "code/MCP-Chatbot/mcp_server.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/server.jac:classify",
+      "type": "function",
+      "name": "classify",
+      "module": "code/MCP-Chatbot/server.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/server.jac:respond_with_image",
+      "type": "function",
+      "name": "respond_with_image",
+      "module": "code/MCP-Chatbot/server.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/server.jac:respond_with_video",
+      "type": "function",
+      "name": "respond_with_video",
+      "module": "code/MCP-Chatbot/server.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/server.jac:respond",
+      "type": "function",
+      "name": "respond",
+      "module": "code/MCP-Chatbot/server.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/tools.jac:postinit",
+      "type": "function",
+      "name": "postinit",
+      "module": "code/MCP-Chatbot/tools.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/tools.jac:load_documents",
+      "type": "function",
+      "name": "load_documents",
+      "module": "code/MCP-Chatbot/tools.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/tools.jac:load_document",
+      "type": "function",
+      "name": "load_document",
+      "module": "code/MCP-Chatbot/tools.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/tools.jac:add_file",
+      "type": "function",
+      "name": "add_file",
+      "module": "code/MCP-Chatbot/tools.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/tools.jac:split_documents",
+      "type": "function",
+      "name": "split_documents",
+      "module": "code/MCP-Chatbot/tools.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/tools.jac:get_embedding_function",
+      "type": "function",
+      "name": "get_embedding_function",
+      "module": "code/MCP-Chatbot/tools.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/tools.jac:add_chunk_id",
+      "type": "function",
+      "name": "add_chunk_id",
+      "module": "code/MCP-Chatbot/tools.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/tools.jac:add_to_chroma",
+      "type": "function",
+      "name": "add_to_chroma",
+      "module": "code/MCP-Chatbot/tools.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/tools.jac:get_from_chroma",
+      "type": "function",
+      "name": "get_from_chroma",
+      "module": "code/MCP-Chatbot/tools.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/tools.jac:search",
+      "type": "function",
+      "name": "search",
+      "module": "code/MCP-Chatbot/tools.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "type": "function",
+      "name": "bootstrap_frontend",
+      "module": "code/MCP-Chatbot/client.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "type": "function",
+      "name": "bodies",
+      "module": "code/MCP-Chatbot/server.impl.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/server.impl.jac:list_mcp_tools",
+      "type": "function",
+      "name": "list_mcp_tools",
+      "module": "code/MCP-Chatbot/server.impl.jac"
+    },
+    {
+      "id": "code/MCP-Chatbot/server.impl.jac:use_mcp_tool",
+      "type": "function",
+      "name": "use_mcp_tool",
+      "module": "code/MCP-Chatbot/server.impl.jac"
+    },
+    {
+      "id": ".git/hooks/push-to-checkout.sample:in",
+      "type": "function",
+      "name": "in",
+      "module": ".git/hooks/push-to-checkout.sample"
+    },
+    {
+      "id": "codebase_genius/BE/utils.jac:get_summary",
+      "type": "function",
+      "name": "get_summary",
+      "module": "codebase_genius/BE/utils.jac"
+    },
+    {
+      "id": "codebase_genius/BE/utils.jac:which",
+      "type": "function",
+      "name": "which",
+      "module": "codebase_genius/BE/utils.jac"
+    },
+    {
+      "id": "codebase_genius/BE/utils.jac:get_all_file_paths",
+      "type": "function",
+      "name": "get_all_file_paths",
+      "module": "codebase_genius/BE/utils.jac"
+    },
+    {
+      "id": "codebase_genius/BE/utils.jac:get_filtered_folder_structure",
+      "type": "function",
+      "name": "get_filtered_folder_structure",
+      "module": "codebase_genius/BE/utils.jac"
+    },
+    {
+      "id": "codebase_genius/BE/utils.jac:extract_abstractions",
+      "type": "function",
+      "name": "extract_abstractions",
+      "module": "codebase_genius/BE/utils.jac"
+    },
+    {
+      "id": "codebase_genius/BE/utils.jac:get_relationships",
+      "type": "function",
+      "name": "get_relationships",
+      "module": "codebase_genius/BE/utils.jac"
+    },
+    {
+      "id": "codebase_genius/BE/utils.jac:chapter_ordering",
+      "type": "function",
+      "name": "chapter_ordering",
+      "module": "codebase_genius/BE/utils.jac"
+    },
+    {
+      "id": "codebase_genius/BE/utils.jac:chapter_drafting",
+      "type": "function",
+      "name": "chapter_drafting",
+      "module": "codebase_genius/BE/utils.jac"
+    },
+    {
+      "id": "codebase_genius/BE/utils.jac:generate_overview",
+      "type": "function",
+      "name": "generate_overview",
+      "module": "codebase_genius/BE/utils.jac"
+    },
+    {
+      "id": "codebase_genius/BE/utils.jac:generate_documentation",
+      "type": "function",
+      "name": "generate_documentation",
+      "module": "codebase_genius/BE/utils.jac"
+    },
+    {
+      "id": "codebase_genius/BE/main.jac:read_in_chunks",
+      "type": "function",
+      "name": "read_in_chunks",
+      "module": "codebase_genius/BE/main.jac"
+    },
+    {
+      "id": "codebase_genius/BE/main.jac:repo_clone",
+      "type": "function",
+      "name": "repo_clone",
+      "module": "codebase_genius/BE/main.jac"
+    },
+    {
+      "id": "codebase_genius/BE/main.jac:read_files_from_list",
+      "type": "function",
+      "name": "read_files_from_list",
+      "module": "codebase_genius/BE/main.jac"
+    },
+    {
+      "id": "codebase_genius/FE/app.py:call_jac_supervisor",
+      "type": "function",
+      "name": "call_jac_supervisor",
+      "module": "codebase_genius/FE/app.py",
+      "lineno": 21
+    },
+    {
+      "id": "codebase_genius/FE/app.py:_extract_from_reports",
+      "type": "function",
+      "name": "_extract_from_reports",
+      "module": "codebase_genius/FE/app.py",
+      "lineno": 36
+    },
+    {
+      "id": "codebase_genius/FE/app.py:normalize_raw_response",
+      "type": "function",
+      "name": "normalize_raw_response",
+      "module": "codebase_genius/FE/app.py",
+      "lineno": 61
+    },
+    {
+      "id": "codebase_genius/FE/app.py:normalize_chapters",
+      "type": "function",
+      "name": "normalize_chapters",
+      "module": "codebase_genius/FE/app.py",
+      "lineno": 85
+    },
+    {
+      "id": "codebase_genius/FE/app.py:generate_documentation_md",
+      "type": "function",
+      "name": "generate_documentation_md",
+      "module": "codebase_genius/FE/app.py",
+      "lineno": 118
+    }
+  ],
+  "edges": [
+    {
+      "from": "code/mental_health_buddy.jac:cheer_up",
+      "to": "API",
+      "label": "calls"
+    },
+    {
+      "from": "code/mental_health_buddy.jac:cheer_up",
+      "to": "model",
+      "label": "calls"
+    },
+    {
+      "from": "code/mental_health_buddy.jac:cheer_up",
+      "to": "Model",
+      "label": "calls"
+    },
+    {
+      "from": "code/mental_health_buddy.jac:cheer_up",
+      "to": "os.getenv",
+      "label": "calls"
+    },
+    {
+      "from": "code/mental_health_buddy.jac:cheer_up",
+      "to": "cheer_up",
+      "label": "calls"
+    },
+    {
+      "from": "code/mental_health_buddy.jac:cheer_up",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "code/mental_health_buddy.jac:cheer_up",
+      "to": "MentalHealthBuddy",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game6.jac:give_hint",
+      "to": "byLLM",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game6.jac:give_hint",
+      "to": "Model",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game6.jac:give_hint",
+      "to": "give_hint",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game6.jac:give_hint",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game6.jac:give_hint",
+      "to": "random.randint",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game6.jac:give_hint",
+      "to": "GuessGame",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game5.py:GuessGame.__init__",
+      "to": "random.randint",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game5.py:GuessGame.start",
+      "to": "print",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game5.py:GuessGame.start",
+      "to": "int",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game5.py:GuessGame.start",
+      "to": "input",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game5.py:GuessGame.start",
+      "to": "print",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game5.py:GuessGame.start",
+      "to": "print",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game5.py:GuessGame.start",
+      "to": "print",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game5.py:GuessGame.start",
+      "to": "print",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game5.py:GuessGame.start",
+      "to": "print",
+      "label": "calls"
+    },
+    {
+      "from": "code/guess_game5.py:GuessGame.start",
+      "to": "print",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/README.md:calling",
+      "to": "Jac",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/README.md:calling",
+      "to": "rgba",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/README.md:calling",
+      "to": "rgba",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/README.md:calling",
+      "to": "integration",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/README.md:calling",
+      "to": "generation",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/README.md:calling",
+      "to": "Windows",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "logging.getLogger",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "logger.setLevel",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "logging.basicConfig",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "os.getenv",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "list_mcp_tools",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "_list",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "streamable_http.streamablehttp_client",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "as",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "mcp.ClientSession",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "sess.initialize",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "sess.list_tools",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "logger.info",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "logger.info",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "anyio.run",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "call_mcp_tool",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "_call",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "streamable_http.streamablehttp_client",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "as",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "mcp.ClientSession",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "sess.initialize",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "sess.call_tool",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "if",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "and",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "if",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "and",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "len",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_client.jac:list_mcp_tools",
+      "to": "anyio.run",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_server.jac:resolve_hints",
+      "to": "RagEngine",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_server.jac:resolve_hints",
+      "to": "WebSearch",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_server.jac:resolve_hints",
+      "to": "FastMCP",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_server.jac:resolve_hints",
+      "to": "resolve_hints",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_server.jac:resolve_hints",
+      "to": "typing.get_type_hints",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_server.jac:resolve_hints",
+      "to": "mcp.tool",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_server.jac:resolve_hints",
+      "to": "tool_search_docs",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_server.jac:resolve_hints",
+      "to": "rag_engine.search",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_server.jac:resolve_hints",
+      "to": "mcp.tool",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_server.jac:resolve_hints",
+      "to": "tool_search_web",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_server.jac:resolve_hints",
+      "to": "web_search.search",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/mcp_server.jac:resolve_hints",
+      "to": "mcp.run",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "RagEngine",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "Model",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "Model",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "os.getenv",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "classify",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "Router",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "RagChat",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "QAChat",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "ImageChat",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "VideoChat",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "here.classify",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "print",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "ImageChat",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "respond_with_image",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "VideoChat",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "respond_with_video",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "RagChat",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "respond",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "QAChat",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "respond",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "Session",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "visitor.chat_history.append",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "infer",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.jac:classify",
+      "to": "visitor.chat_history.append",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "os.getenv",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "os.path.exists",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "os.makedirs",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "self.load_documents",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "self.split_documents",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "self.add_to_chroma",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "PyPDFDirectoryLoader",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "document_loader.load",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "range",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "min",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "len",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "doc.metadata.get",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "doc.metadata.get",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "load_document",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "PyPDFLoader",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "loader.load",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "add_file",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "self.load_document",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "self.split_documents",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "self.add_to_chroma",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "split_documents",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "RecursiveCharacterTextSplitter",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "text_splitter.split_documents",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "OpenAIEmbeddings",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "GoogleGenerativeAIEmbeddings",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "add_chunk_id",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "chunk.metadata.get",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "chunk.metadata.get",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "add_to_chroma",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "Chroma",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "self.get_embedding_function",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "self.add_chunk_id",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "db.get",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "set",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "new_chunks.append",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "len",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "print",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "db.add_documents",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "print",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "get_from_chroma",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "Chroma",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "self.get_embedding_function",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "db.similarity_search_with_score",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "search",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "self.get_from_chroma",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "range",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "len",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "doc.metadata.get",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "doc.metadata.get",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "len",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "len",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "search",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "requests.post",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "resp.json",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "data.get",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "isinstance",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "r.get",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "r.get",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/tools.jac:postinit",
+      "to": "r.get",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "bootstrap_frontend",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.set_page_config",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.title",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.file_uploader",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "File",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "base64.b64encode",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "uploaded_file.read",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": ".decode",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "uploaded_file.name.lower",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": ".split",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "not",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "file_type.startswith",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "file_type.startswith",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.error",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "requests.post",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.success",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.error",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.chat_message",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.markdown",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.chat_input",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.session_state.messages.append",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.chat_message",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.markdown",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.chat_message",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.spinner",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "requests.post",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "response.json",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "print",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.write",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "st.session_state.messages.append",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "requests.post",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "requests.post",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "requests.post",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "response.json",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "print",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/client.jac:bootstrap_frontend",
+      "to": "bootstrap_frontend",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "server.jac",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "message",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "dictionary",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "self.respond_with_image",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "Image",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "visitor.chat_history.append",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "self.respond_with_video",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "Video",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "visitor.chat_history.append",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "self.respond",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "visitor.chat_history.append",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "self.respond",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "visitor.chat_history.append",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "os.path.join",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "os.path.exists",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "os.makedirs",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "os.path.join",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "base64.b64decode",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "self.file_data.encode",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "open",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "f.write",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "self.file_name.lower",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "lower_name.endswith",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "lower_name.endswith",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "rag_engine.add_file",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "lower_name.endswith",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "lower_name.endswith",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "list_mcp_tools",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "mcp_client.list_mcp_tools",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "list_mcp_tools",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "use_mcp_tool",
+      "label": "calls"
+    },
+    {
+      "from": "code/MCP-Chatbot/server.impl.jac:bodies",
+      "to": "mcp_client.call_mcp_tool",
+      "label": "calls"
+    },
+    {
+      "from": ".git/hooks/push-to-checkout.sample:in",
+      "to": "pack",
+      "label": "calls"
+    },
+    {
+      "from": ".git/hooks/push-to-checkout.sample:in",
+      "to": "reference",
+      "label": "calls"
+    },
+    {
+      "from": ".git/hooks/push-to-checkout.sample:in",
+      "to": "push",
+      "label": "calls"
+    },
+    {
+      "from": ".git/hooks/push-to-checkout.sample:in",
+      "to": "die",
+      "label": "calls"
+    },
+    {
+      "from": ".git/hooks/push-to-checkout.sample:in",
+      "to": "push_to_deploy",
+      "label": "calls"
+    },
+    {
+      "from": ".git/hooks/push-to-checkout.sample:in",
+      "to": "head_has_history",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "Model",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "get_summary",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "repo_path",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "get_all_file_paths",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "Path",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "if",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "repo_p.exists",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "repo_p.is_dir",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "repo_p.rglob",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "file_path.is_file",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "all_files.append",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "str",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "file_path.resolve",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "print",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "path",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "get_filtered_folder_structure",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "abstractions",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "extract_abstractions",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "get_relationships",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "chapter_ordering",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "chapter_drafting",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "generate_overview",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "generate_documentation",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "llm",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "files",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/utils.jac:get_summary",
+      "to": "friendly",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/main.jac:read_in_chunks",
+      "to": "read_in_chunks",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/main.jac:read_in_chunks",
+      "to": "repo_clone",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/main.jac:read_in_chunks",
+      "to": "read_files_from_list",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/BE/main.jac:read_in_chunks",
+      "to": "dict",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:call_jac_supervisor",
+      "to": "repo_url.startswith",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:call_jac_supervisor",
+      "to": "requests.post",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:call_jac_supervisor",
+      "to": "r.raise_for_status",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:call_jac_supervisor",
+      "to": "r.json",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:call_jac_supervisor",
+      "to": "RuntimeError",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:_extract_from_reports",
+      "to": "isinstance",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:_extract_from_reports",
+      "to": "rep.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:_extract_from_reports",
+      "to": "rep.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:_extract_from_reports",
+      "to": "rep.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:_extract_from_reports",
+      "to": "rep.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:_extract_from_reports",
+      "to": "rep.items",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:_extract_from_reports",
+      "to": "isinstance",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:_extract_from_reports",
+      "to": "isinstance",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_raw_response",
+      "to": "isinstance",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_raw_response",
+      "to": "str",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_raw_response",
+      "to": "resp.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_raw_response",
+      "to": "resp.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_raw_response",
+      "to": "resp.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_raw_response",
+      "to": "_extract_from_reports",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_raw_response",
+      "to": "resp.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_raw_response",
+      "to": "extracted.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_raw_response",
+      "to": "extracted.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "isinstance",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "norm.append",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "isinstance",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "isinstance",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "ctx.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "item.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "item.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "item.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "ctx.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "item.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "item.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "isinstance",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "_json.dumps",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "str",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "norm.append",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "norm.append",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:normalize_chapters",
+      "to": "str",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:generate_documentation_md",
+      "to": "enumerate",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:generate_documentation_md",
+      "to": "c.get",
+      "label": "calls"
+    },
+    {
+      "from": "codebase_genius/FE/app.py:generate_documentation_md",
+      "to": "c.get",
+      "label": "calls"
+    }
+  ]
+}
