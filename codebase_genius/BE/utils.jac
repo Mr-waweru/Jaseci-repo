@@ -2,15 +2,36 @@ import from dotenv { load_dotenv }
 import from byllm.llm { Model }
 import from pathlib { Path }
 import os;
+import time;
 
-glob llm = Model(model_name="gemini/gemini-2.5-flash", verbose=False);
+glob llm = Model(model_name="gemini/gemini-2.0-flash", verbose=False);
 
 """obtain this chunk of text and summary so far and return the updated summary.
 This tool is intended to be used by the Supervisor to iteratively summarize
 large README files in chunks.
 """
-def get_summary(text_chunk: str, summary: str) -> str by llm();
+def get_summary(text_chunk: str, summary: str, max_retries: int = 3) -> str {
+    for attempt in range(max_retries) {
+        try {
+            return get_summary_impl(text_chunk, summary);
+        } except Exception as e {
+            if "503" in str(e) or "overloaded" in str(e).lower() {
+                if attempt < max_retries - 1 {
+                    wait_time = (2 ** attempt);  # Exponential backoff: 1s, 2s, 4s
+                    print(f"API overloaded, retrying in {wait_time}s... (attempt {attempt + 1}/{max_retries})");
+                    time.sleep(wait_time);
+                } else {
+                    print("Max retries reached. API still unavailable.");
+                    raise e;
+                }
+            } else {
+                raise e;
+            }
+        }
+    }
+}
 
+def get_summary_impl(text_chunk: str, summary: str) -> str by llm();
 
 """Return all file paths under repo_path (repo_path passed as a string).
 This helper is used as a supporting tool for the LLM-based file filtering
