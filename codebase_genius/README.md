@@ -129,10 +129,6 @@ graph TB
 
 ---
 
-
-
-
-
 ## Technologies & Tools Used
 
 * **Jac Language** – Agent-oriented programming with native LLM integration (`jaclang`, `jac-cloud`)
@@ -219,12 +215,14 @@ streamlit run app.py
 4. Wait for processing (typically 2-5 minutes depending on repo size)
 
 ### 2. View Documentation
+![Overview Page](./assets/overview.png)
 Click `View Documentation`. Once generated, you can:
 - Browse the overview section
 - Navigate through chapters using the sidebar
 - Download the complete documentation as markdown
 
 ### 3. Query Code Relationships
+![Query Relationships Page](./assets/query.png)
 Click `Query Relationships`. Ask natural language questions about your codebase:
 - "Which functions call train_model?"
 - "What does process_data call?"
